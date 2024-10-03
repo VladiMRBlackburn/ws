@@ -1,0 +1,134 @@
+# def nums(number):
+#     if number == 1 or number == 2 or number == 3 or number == 5 or number == 7:
+#         return 'Простое'
+#     elif number % 2 == 0 or number % 3 == 0 or number % 5 == 0 or number & 7 == 0:
+#         return 'Сложное'
+#     else: 
+#         return 'Простое'
+# print(nums())
+
+
+
+
+
+
+# import string
+# pwd = input('Введите пароль: ')
+
+# def check_pass(pwd):
+
+# err = {
+# 'length': 'Длина пароля не равна 8 символам',
+# 'upper': 'Отсутствуют заглавные буквы',
+# 'lower': 'Нет строчных букв в пароле',
+# 'digits': 'Нет цифр в пароле',
+# 'spec': 'Отсутствуют спецсимволы в пароле',
+# 'bad_symbols': 'В пароле использованы непредусмотренные символы'
+# }
+
+# if len(pwd) == 8:
+#         err.pop('length')
+
+# if pwd.lower() != pwd:
+#         err.pop('upper')
+
+# if pwd.upper() != pwd:
+#         err.pop('lower')
+
+#     if any(map(str.isdigit, pwd)):
+#         err.pop('digits')
+
+#     if ('*' in pwd) or ('-' in pwd) or ('#' in pwd):
+#         err.pop('spec')
+
+#     allowed_sym = string.ascii_uppercase + string.ascii_lowercase + string.digits + '*-#'
+
+#     if (set(pwd) - set(allowed_sym)) == set():
+#         err.pop('bad_symbols')
+
+#     if len(err) == 0:
+#         print('Пароль идеален')
+#     else:
+#         print(*err.values(), sep='; ')
+        
+# check_pass(pwd)
+
+
+
+
+
+
+
+
+
+
+# def sort(numbers):
+#     for i in range(len(numbers) - 1):
+#         for j in range(len(numbers) - 1 - i):
+#             if numbers[j] > numbers[j + i]:
+#                 numbers[j], numbers[j + i] = numbers[j + i], numbers[j]
+#     return numbers
+# print(sort([2, 5, 6, 4, 8, 7, 9, 1, 3]))
+
+
+
+
+
+
+
+
+
+# def f():
+#     a = [str(i) for i in input().split()]
+#     out = {}
+#     n = 0
+#     b = ''
+#     for i in a:
+#         if i in out:
+#             out[i] +- 1
+#         elif not i in out:
+#             out[i] =1
+#     res = ''
+#     for i in out:
+#         if out[i] > n:
+#             n = out[i]
+#             res = f'(i) - (n)'
+            
+#     return res
+
+# out = f()
+# print(out)
+
+
+
+
+
+
+
+
+
+
+
+# def f(a:str):
+#     if a.lower() == a[::-1].lower():
+#         print(True)
+#     else:
+#         print(False)
+        
+# f('Шалаш')
+
+
+
+
+
+
+
+# def f(subst, st):
+#     if subst in st:
+#         print('Есть контакт')
+#     else:
+#         print('Мимо')
+        
+# f('asd', 'fjdsfuadsiuhgiufhgiuafd')
+
+
